@@ -1,0 +1,43 @@
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.content {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.headline {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.subheading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.body {
+  font-size: 0.9375rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  border: 1px solid #111827;
+  font-size: 0.875rem;
+  width: fit-content;
+}
+
+.image {
+  flex: 1 1 300px;
+}

@@ -1,0 +1,33 @@
+.wrapper {
+  position: relative;
+}
+
+.trigger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9375rem;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  min-width: 180px;
+  z-index: 10;
+}
+
+.link {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.link:hover {
+  background: #f9fafb;
+}
