@@ -13,9 +13,13 @@ describe("Hero", () => {
     expect(screen.getByRole("heading", { level: 1 })).toBeInTheDocument();
   });
 
-  it("renders a CTA link or button", () => {
+  it("renders a primary CTA link to /contact", () => {
     render(<Hero />);
-    const cta = screen.getByRole("link") ?? screen.queryByRole("button");
-    expect(cta).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "Contact us" })).toBeInTheDocument();
+  });
+
+  it("renders a secondary CTA link to explore solutions", () => {
+    render(<Hero />);
+    expect(screen.getByRole("link", { name: "Explore solutions" })).toBeInTheDocument();
   });
 });

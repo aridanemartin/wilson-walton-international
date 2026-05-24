@@ -48,3 +48,21 @@ export interface PlaceholderImageProps {
   aspectRatio?: string;
   className?: string;
 }
+
+export interface SolutionCardData {
+  id: string;
+  slug: string;
+  name: string;
+  shortDescription: string;
+  fullDescription: string;
+  imagePlaceholderLabel: string;
+}
+
+export interface IndustryCardData {
+  id: string;
+  slug: string;
+  name: string;
+  shortDescription: string;
+  imagePlaceholderLabel: string;
+  relevantSolutionSlugs: string[];
+}

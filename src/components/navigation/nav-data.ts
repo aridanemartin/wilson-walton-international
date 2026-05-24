@@ -1,45 +1,57 @@
 import type { NavigationTree } from "@/types";
 
 export const navigationTree: NavigationTree = [
-  { label: "Home", href: "#" },
+  { label: "Home", href: "/" },
   {
     label: "Company",
     href: "#",
     children: [
-      { label: "About Us", href: "#" },
-      { label: "News", href: "#" },
-      { label: "Contact", href: "#" },
+      { label: "About Us", href: "/company/about-us" },
+      { label: "Quality & Certifications", href: "/company/quality-certifications" },
+      { label: "News", href: "/company/news" },
     ],
   },
   {
-    label: "Products & Services",
+    label: "Solutions",
     href: "#",
     children: [
-      { label: "ICCP", href: "#" },
-      { label: "MGPS", href: "#" },
-      { label: "Sacrificial Anodes", href: "#" },
-      { label: "Services", href: "#" },
+      { label: "ICCP Systems", href: "/solutions/iccp-systems" },
+      { label: "MGPS Systems", href: "/solutions/mgps-systems" },
+      { label: "Sacrificial Anodes", href: "/solutions/sacrificial-anodes" },
+      { label: "Corrosion Modeling", href: "/solutions/corrosion-modeling" },
+      { label: "Technical Assistance", href: "/solutions/technical-assistance" },
     ],
   },
   {
-    label: "Offshore",
+    label: "Industries",
     href: "#",
     children: [
-      { label: "Overview", href: "#" },
-      { label: "Renewables", href: "#" },
-      { label: "Oil & Gas", href: "#" },
+      { label: "Maritime", href: "/industries/maritime" },
+      { label: "Offshore Renewables", href: "/industries/offshore-renewables" },
+      { label: "Oil & Gas", href: "/industries/oil-gas" },
+      { label: "Ports & Onshore", href: "/industries/ports-onshore" },
+      { label: "Military", href: "/industries/military" },
     ],
   },
   {
-    label: "Maritime",
+    label: "Engineering",
     href: "#",
     children: [
-      { label: "Overview", href: "#" },
-      { label: "ICCP", href: "#" },
-      { label: "MGPS", href: "#" },
+      { label: "Engineering & Consulting", href: "/engineering/consulting" },
+      { label: "Corrosion Modeling", href: "/solutions/corrosion-modeling" },
+      { label: "Commissioning & Technical Assistance", href: "/solutions/technical-assistance" },
+      { label: "Inspections & Surveys", href: "/engineering/inspections-surveys" },
     ],
   },
-  { label: "Corrosion Modeling", href: "#" },
-  { label: "Engineering & Consulting", href: "#" },
-  { label: "Downloads", href: "#" },
+  {
+    label: "Resources",
+    href: "#",
+    children: [
+      { label: "Downloads", href: "/resources/downloads" },
+      { label: "News", href: "/company/news" },
+      { label: "Certifications", href: "/resources/certifications" },
+      { label: "Case Studies", href: "/resources/case-studies" },
+    ],
+  },
+  { label: "Contact", href: "/contact" },
 ];

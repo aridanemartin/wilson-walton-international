@@ -1,0 +1,16 @@
+.section {
+  padding: 3rem 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
