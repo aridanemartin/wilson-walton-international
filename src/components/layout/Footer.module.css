@@ -1,0 +1,52 @@
+.footer {
+  border-top: 1px solid #e5e7eb;
+  padding: 2rem 1.5rem 1rem;
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact {
+  flex: 1 1 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.cert {
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.certImage {
+  width: 80px;
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+  font-size: 0.8125rem;
+  color: #6b7280;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1rem;
+}
+
+.legalLink {
+  font-size: 0.8125rem;
+}

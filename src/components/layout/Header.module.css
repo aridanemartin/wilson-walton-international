@@ -1,0 +1,63 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--header-h);
+  background: var(--navy);
+  border-bottom: 1px solid var(--white-10);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 1.75rem;
+  gap: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* ── Logo ─────────────────────────────────── */
+.logoLink {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 2rem;
+}
+
+.logoImage {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+/* ── Contact (right side) ─────────────────── */
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  margin-left: auto;
+  padding-left: 1.5rem;
+  font-size: 0.75rem;
+  color: var(--white-70);
+  font-family: var(--font-body, 'DM Sans', sans-serif);
+  border-left: 1px solid var(--white-10);
+}
+
+.contactItem {
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .inner {
+    padding: 0 1rem;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .logoLink {
+    margin-right: auto;
+  }
+}

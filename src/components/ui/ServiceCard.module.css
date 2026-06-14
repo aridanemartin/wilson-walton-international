@@ -1,0 +1,17 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 0.875rem;
+  color: #374151;
+}

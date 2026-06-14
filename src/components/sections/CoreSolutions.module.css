@@ -1,0 +1,201 @@
+/* ─── Core Solutions ────────────────────────────── */
+.section {
+  background: var(--navy-mid);
+  padding: 6rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle diagonal accent */
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(135deg, transparent 50%, rgba(14, 165, 233, 0.025) 50%);
+  pointer-events: none;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* ─── Header ────────────────────────────────────── */
+.header {
+  position: sticky;
+  top: calc(var(--header-h) + 2rem);
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+
+.eyebrowLine {
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  color: var(--white);
+  letter-spacing: 0.01em;
+}
+
+/* ─── Solution list ─────────────────────────────── */
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid var(--white-10);
+}
+
+.card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 5rem 1fr auto;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--white-10);
+  transition: background 0.2s;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  right: -2rem;
+  top: 0;
+  bottom: 0;
+  background: rgba(14, 165, 233, 0.04);
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.cardNumber {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--white-10);
+  letter-spacing: -0.02em;
+  transition: color 0.2s;
+  user-select: none;
+}
+
+.card:hover .cardNumber {
+  color: rgba(14, 165, 233, 0.3);
+}
+
+.cardBody {
+  flex: 1;
+}
+
+.cardName {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 0.4rem;
+  transition: color 0.2s;
+}
+
+.card:hover .cardName {
+  color: var(--accent-light);
+}
+
+.cardDescription {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--white-70);
+  max-width: 480px;
+}
+
+.cardLink {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--white-30);
+  white-space: nowrap;
+  transition: color 0.2s, gap 0.2s;
+  flex-shrink: 0;
+}
+
+.card:hover .cardLink {
+  color: var(--accent);
+  gap: 0.7rem;
+}
+
+.cardLinkText {
+  transition: transform 0.2s;
+}
+
+/* ─── Responsive ────────────────────────────────── */
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .header {
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 4rem 1.25rem;
+  }
+
+  .card {
+    grid-template-columns: 3.5rem 1fr;
+    grid-template-rows: auto auto;
+    gap: 0.75rem 1rem;
+    padding: 1.5rem 0;
+  }
+
+  .cardLink {
+    grid-column: 2;
+  }
+
+  .cardNumber {
+    font-size: 2.25rem;
+  }
+}
