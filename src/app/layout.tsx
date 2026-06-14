@@ -21,6 +21,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Wilson Walton International",
   description: "Proven quality since 1966 — cathodic protection and corrosion engineering.",
+  keywords: ["cathodic protection", "corrosion engineering", "Wilson Walton", "impressed current", "sacrificial anodes"],
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
