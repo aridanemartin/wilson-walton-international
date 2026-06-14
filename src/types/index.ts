@@ -49,6 +49,12 @@ export interface PlaceholderImageProps {
   className?: string;
 }
 
+export interface ContentSection {
+  heading: string;
+  body?: string;
+  items?: string[];
+}
+
 export interface SolutionCardData {
   id: string;
   slug: string;
@@ -56,6 +62,7 @@ export interface SolutionCardData {
   shortDescription: string;
   fullDescription: string;
   imagePlaceholderLabel: string;
+  sections?: ContentSection[];
 }
 
 export interface IndustryCardData {
@@ -63,6 +70,8 @@ export interface IndustryCardData {
   slug: string;
   name: string;
   shortDescription: string;
+  overview?: string;
   imagePlaceholderLabel: string;
   relevantSolutionSlugs: string[];
+  sections?: ContentSection[];
 }
