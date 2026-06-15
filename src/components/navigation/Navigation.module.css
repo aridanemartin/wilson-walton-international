@@ -265,6 +265,10 @@
    RESPONSIVE
    ═══════════════════════════════════════════════ */
 @media (max-width: 767px) {
+  .nav {
+    justify-content: flex-end;
+  }
+
   .hamburger {
     display: flex;
   }
